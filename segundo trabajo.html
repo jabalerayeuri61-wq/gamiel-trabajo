@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi pagina web 100% legal</title>
+    <style>
+        body {
+            /* Cambia "fondo.jpg" por el nombre exacto de tu imagen */
+            background-image: url("fondo.jpg");
+            background-size: cover;       /* Ajusta la foto a toda la pantalla */
+            background-position: center;  /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que se repita */
+            background-attachment: fixed; /* Deja el fondo quieto al bajar */
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            color: #0056b3;               /* Cambia el color de todas las letras a azul */
+        }
+    </style>
+</head>
+<body>
+    <h1>mi pagina web 100% legal</h1>
+    <hr>
+
+    <h2>menu de opciones donde puedes encontrar lo que buscas</h2>
+    <hr>
+
+    <label for="opciones">elije lo que buscas:</label>
+    <select id="opciones" name="opciones" onchange="if(this.value) window.location.href=this.value">
+        <option value="">-- Selecciona una página --</option>
+        <option value="sobre mi.html">sobre mi</option>
+        <option value="imagenes.html">tabla con imagenes</option>
+        <option value="formulario.html">formulario</option>
+    </select>
+</body>
+</html>
